@@ -29,7 +29,7 @@ go_version() {
   fi
 }
 
-PROMPT='    '
+PROMPT=''
 PROMPT+="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[bright-red]%}➜ ) %{$fg[cyan]%}%2c%{$reset_color%}"
 PROMPT+='$(git_prompt_info)'
 PROMPT+='$(git_commits_ahead)'
