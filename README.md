@@ -2,7 +2,7 @@
 
 ## How to use
 
-1. Copy the theme file to your oh-my-zsh themes directory:
+1. Clone the theme to a custom oh-my-zsh themes directory:
 
     ```sh
     git clone git@github.com:aifrim/aifrim.zsh-theme.git ~/.oh-my-custom-zsh/
@@ -23,11 +23,12 @@ If you have a `package.json`, `Cargo.toml` or `go.mod` file in your current dire
   - `↓` if you fetched and have commits to pull
   - `↑` if you have commits to push
 - Package version:
-  - `name@1.0.0` for `package.json`
-  - `name@1.0.0` for `Cargo.toml`
+  - `name@1.0.0` for `package.json` and `Cargo.toml`
   - `package/name@v1` for `go.mod`
 
       `v1` is added when you did not define a version in your `go.mod` file, otherwise it will be the version you defined.
+
+  > If you want other files / languages to be recognized, you can add them in the `aifrim.zsh-theme` file via a pull request.
 
 ### Example
 
