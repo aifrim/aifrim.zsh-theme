@@ -9,7 +9,7 @@
     ```
 
 2. Edit your `~/.zshrc` file and set
-    - `ZSH_CUSTOM="~/.oh-my-custom-zsh"`
+    - `export ZSH_CUSTOM="$HOME/.oh-my-custom-zsh"`
     - `ZSH_THEME="aifrim"`.
 
 ## What you will see
