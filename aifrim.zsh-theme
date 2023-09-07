@@ -41,7 +41,8 @@ PROMPT+='$(git_commits_behind)'
 PROMPT+='$(node_version)'
 PROMPT+='$(rust_version)'
 PROMPT+='$(go_version)'
-PROMPT+=' $FX[bold]${FG[105]}»%{$reset_color%} '
+PROMPT+='
+$FX[bold]${FG[105]}»%{$reset_color%} '
 
 ZSH_THEME_GIT_PROMPT_PREFIX=" %{$FX[bold]$FG[167]%}git:(%{$FG[172]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
