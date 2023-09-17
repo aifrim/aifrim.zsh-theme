@@ -3,11 +3,15 @@ node_version() {
     local name=$(cat package.json | grep "name" -m1 | sed -r 's/"name": |"|,|\ //g')
     local version=$(cat package.json | grep "version" -m1 | sed -r 's/"version": |"|,|\ //g')
 
-    if [ -z "$version" ]; then
-      version="0.0.1"
-    fi
+    if [ -z "$name" ]; then
+      # There is no name in package.json - therefore, we will not echo anything
+    else
+      if [ -z "$version" ]; then
+        version="0.0.1"
+      fi
 
-    echo "$AIFRIM_THEME_NODE_NAME_PREFIX$name$AIFRIM_THEME_NODE_NAME_SUFFIX@$AIFRIM_THEME_NODE_VERSION_PREFIX$version$AIFRIM_THEME_NODE_VERSION_SUFFIX"
+      echo "$AIFRIM_THEME_NODE_NAME_PREFIX$name$AIFRIM_THEME_NODE_NAME_SUFFIX@$AIFRIM_THEME_NODE_VERSION_PREFIX$version$AIFRIM_THEME_NODE_VERSION_SUFFIX"
+    fi
   fi
 }
 
